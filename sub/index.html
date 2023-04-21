@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멜론차트 TOP100</title>
+  <link rel="icon" href="/img/멜론파비콘.ico/android-icon-36x36.png" />
+  <link rel="apple-touch-icon" href="/img/멜론파비콘.ico/android-icon-36x36.png" />
+  <link rel="stylesheet" href="../sub/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/index.html"><img src="../img/logo_melon142x99.png" alt="logo"></a>
+    </div>
+    <div class="search">
+      <input type="text" class="search_bar" placeholder="실시간 차트의 플레이버튼을 눌러보세요!">
+      <button> <i class="fas fa-search"></i></button>
+
+      <div class="notice-block">
+        <div class="soar">급상승</div>
+        <div class="notice">
+          <ul class="rolling">
+            <li><a href="#" class="link">1. 스즈메의 문단속</a></li>
+            <li><a href="#" class="link">2. 아이유</a></li>
+            <li><a href="#" class="link">3. BLACKPINK</a></li>
+            <li><a href="#" class="link">4. BIG Naughty (서동현)</a></li>
+            <li><a href="#" class="link">5. IVE (아이브)</a></li>
+            <li><a href="#" class="link">6. 멜로망스</a></li>
+            <li><a href="#" class="link">7. 봄</a></li>
+            <li><a href="#" class="link">8. 임영웅</a></li>
+            <li><a href="#" class="link">9. 봄봄봄</a></li>
+            <li><a href="#" class="link">10. 잔나비</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <ul class="real_time">
+            <li><a href="#">1. 스즈메의 문단속</a></li>
+            <li><a href="#">2. 아이유</a></li>
+            <li><a href="#">3. BLACKPINK</a></li>
+            <li><a href="#">4. BIG Naughty (서동현)</a></li>
+            <li><a href="#">5. IVE (아이브)</a></li>
+            <li><a href="#">6. 멜로망스</a></li>
+            <li><a href="#">7. 봄</a></li>
+            <li><a href="#">8. 임영웅</a></li>
+            <li><a href="#">9. 봄봄봄</a></li>
+            <li><a href="#">10. 잔나비</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="gnb">
+      <a class="ticket" href="#">이용권구매</a>
+      <a class="gnb_none" href="#">멜론라운지</a>
+      <a href="#">이벤트</a>
+      <a href="#">멜론티켓</a>
+    </div>
+
+
+  </header>
+
+  <div class="lnb">
+    <div class="lnb_box clear">
+
+      <ul class="lnb_left">
+        <li class="float sub">
+          <a class="float_txt" href="#">
+            <h3 class="sub">멜론차트</h3>
+          </a>
+          <ul class="sub_ul">
+            <li class="sub_li"><a href="#">TOP100</a></li>
+            <li><a href="#">일간</a></li>
+            <li><a href="#">주간</a></li>
+            <li><a href="#">월간</a></li>
+            <li><a href="#">시대</a></li>
+          </ul>
+        </li>
+        <li class="float">
+          <a class="float_txt" href="#">
+            <h3>최신음악</h3>
+          </a>
+          <ul>
+            <li><a href="#">최신곡</a></li>
+            <li><a href="#">최신앨범</a></li>
+            <li><a href="#">최신뮤비</a></li>
+          </ul>
+        </li>
+        <li class="float">
+          <a class="float_txt" href="#">
+            <h3>장르음악</h3>
+          </a>
+          <ul>
+            <li><a href="#">현대대중음악</a></li>
+            <li><a href="#">해외POP음악</a></li>
+            <li><a href="#">그외인기장르</a></li>
+          </ul>
+        </li>
+        <li class="float">
+          <a class="float_txt" href="#">
+            <h3>멜론DJ</h3>
+          </a>
+          <ul>
+            <li><a href="#">투데이</a></li>
+            <li><a href="#">전문가 선곡</a></li>
+            <li><a href="#">테마장르</a></li>
+            <li><a href="#">파워DJ</a></li>
+            <li><a href="#">인기DJ</a></li>
+          </ul>
+        </li>
+        <li class="float">
+          <a class="float_txt" href="#">
+            <h3>멜론TV</h3>
+          </a>
+          <ul>
+            <li><a href="#">오늘의 이슈</a></li>
+            <li><a href="#">뮤직비디오</a></li>
+            <li><a href="#">멜론 오리지널</a></li>
+            <li><a href="#">아티스트</a></li>
+          </ul>
+        </li>
+        <li class="float">
+          <a class="float_txt" href="#">
+            <h3>스타포스트</h3>
+          </a>
+          <ul>
+            <li><a href="#">NOW</a></li>
+            <li><a href="#">아티스트 랭킹</a></li>
+            <li><a href="#">마이 랭킹</a></li>
+          </ul>
+        </li>
+        <li class="float"><a class="float_txt" href="#">
+            <h3>멜론매거진</h3>
+          </a></li>
+        <li class="float"><a class="float_txt" href="#">
+            <h3>뮤직어워드</h3>
+          </a></li>
+      </ul> <!-- lnb_left -->
+
+      <ul class="lnb_right">
+        <li><a href="#">로그인/회원가입</a></li>
+      </ul> <!-- lnb_right -->
+
+    </div> <!-- lnb_box -->
+  </div> <!-- lnb -->
+
+
+  <div class="bottom_color_gray">
+    bottom gray
+  </div>
+
+  <!-- ---------------- -->
+
+  <div class="bottom_color_white">
+    <div class="t100_time">
+      <p>2023.04.17<strong class="st">15:00</strong></p>
+    </div>
+  </div>
+
+  <div class="chat_menu">
+    <div class="hidden"></div>
+    <ul class="">
+      <a href="">
+        <li>셔플듣기</li>
+      </a>
+      <a href="">
+        <li>전체듣기</li>
+      </a>
+      <a href="">
+        <li>듣기</li>
+      </a>
+      <a href="">
+        <li>담기</li>
+      </a>
+      <a href="">
+        <li>다운</li>
+      </a>
+      <a href="">
+        <li>FLAC</li>
+      </a>
+      <a href="">
+        <li>선물</li>
+      </a>
+    </ul>
+
+    <div class="chat_menu_new" href="">
+      <a href="">새로고침</a>
+    </div>
+
+  </div>
+  <div class="chat">
+    <div class="chat_list">
+      <ul>
+        <div class="chat_left">
+          <input id="chat_chk" type="checkbox">
+          <li class="rank">순위</li>
+          <li class="data">곡 정보</li>
+          <li class="name">앨범</li>
+          <li class="like">좋아요</li>
+        </div>
+
+        <div class="chat_right">
+          <li>듣기</li>
+          <li>담기</li>
+          <li>다운</li>
+          <li>뮤비</li>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+
+  <input type="checkbox" id="chk">
+
+  <div class="music">
+    <audio id="player" src="../audio/NewJeans (뉴진스) 'Ditto' Performance Video (320 kbps).mp3"></audio>
+
+    <div class="hp_slide">
+      <div class="hp_range"></div>
+    </div> <!-- hp_slide -->
+
+    <div class="player_ditto">
+      <div class="player_ditto_left">
+        <img src="../img/chart/1,2등.jpg" alt="1">
+        <p>NewJeans (뉴진스) 'Ditto'</p>
+      </div> <!-- player_ditto_left -->
+
+      <div class="player_ditto_middle">
+        <div class="player_left">왼쪽</div>
+        <button id="play_btn" onclick="document.getElementById('player').play()">재생버튼</button>
+        <button id="pause_btn" onclick="document.getElementById('player').pause()">일시정지</button>
+        <button id="btn_Stop">정지버튼</button>
+        <div class="player_right">오른쪽</div>
+      </div> <!-- player_ditto_middle -->
+
+      <div class="player_ditto_right">
+        <div id="time">00:00 / 00:00</div>
+        <input id="vol" type="range" max="100" min="0" value="50">
+
+      </div> <!-- player_ditto_right -->
+    </div>
+
+  </div> <!-- music -->
+
+  <div class="album">
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">1 -</p>
+        <p><img src="../img/chart/1,2등.jpg" alt="1"></p>
+        <p class="data">Ditto</br><small>NewJeans</small></p>
+        <p class="name">NewJeans "OMG"</p>
+        <p class="like">♡240,744</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">2 -</p>
+        <p><img src="../img/chart/-2,3등.jpg" alt="2"></p>
+        <p class="data">I AM</br><small>IVE (아이브)</small></p>
+        <p class="name">I've IVE</p>
+        <p class="like">♡84,773</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">3 -</p>
+        <p><img src="../img/chart/-1등.jpg" alt="3"></p>
+        <p class="data">꽃</br><small>지수</small></p>
+        <p class="name">ME</p>
+        <p class="like">♡75,163</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">4 -</p>
+        <p><img src="../img/chart/-2,3등.jpg" alt="4"></p>
+        <p class="data">Kitsch</br><small>IVE (아이브)</small></p>
+        <p class="name">I've IVE</p>
+        <p class="like">♡98,098</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">5 -</p>
+        <p><img src="../img/chart/5등.jpg" alt="5"></p>
+        <p class="data">Hype boy</br><small>NewJeans</small></p>
+        <p class="name">NewJeans 1st EP 'New Jeans'</p>
+        <p class="like">♡256,031</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">6 -</p>
+        <p><img src="../img/chart/1,2등.jpg" alt="6"></p>
+        <p class="data">OMG</br><small>NewJeans</small></p>
+        <p class="name">NewJeans "OMG"</p>
+        <p class="like">♡174,039</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">7 -</p>
+        <p><img src="../img/chart/7등.jpg" alt="7"></p>
+        <p class="data">Teddy Bear</br><small>STAYC(스테이씨)</small></p>
+        <p class="name">Teddy Bear</p>
+        <p class="like">♡78,697</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">8 -</p>
+        <p><img src="../img/chart/8등.jpg" alt="8"></p>
+        <p class="data">Like Crazy</br><small>지민</small></p>
+        <p class="name">FACE</p>
+        <p class="like">♡54,897</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">9 -</p>
+        <p><img src="../img/chart/9등.jpg" alt="9"></p>
+        <p class="data">Love Me Like This</br><small>NMIXX</small></p>
+        <p class="name">expérgo</p>
+        <p class="like">♡240,744</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">10 -</p>
+        <p><img src="../img/chart/10등.jpg" alt="10"></p>
+        <p class="data">사람 Pt.2 (feat. 아이유)</br><small>사람 Pt.2 (feat. 아이유)</small></p>
+        <p class="name">Agust D</p>
+        <p class="like">♡49,131</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">11 -</p>
+        <p><img src="../img/chart/11등.jpg" alt="11"></p>
+        <p class="data">사건의 지평선</br><small>YOUNHA 6th Album</small></p>
+        <p class="name">윤하 (YOUNHA)</p>
+        <p class="like">♡295,873</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">12 -</p>
+        <p><img src="../img/chart/12등.jpg" alt="12"></p>
+        <p class="data">I Don't Think That I Like Her</br><small>Charlie Puth</small></p>
+        <p class="name">CHARLIE</p>
+        <p class="like">♡152,287</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">13 -</p>
+        <p><img src="../img/chart/13등.jpg" alt="13"></p>
+        <p class="data">사랑은 늘 도망가</br><small>임영웅</small></p>
+        <p class="name">신사와 아가씨 OST Part.2</p>
+        <p class="like">♡192,812</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">14 -</p>
+        <p><img src="../img/chart/14등.jpg" alt="14"></p>
+        <p class="data">CHRISTIAN</br><small>Zior Park</small></p>
+        <p class="name">WHERE DOES SASQUATCH LIVE?</p>
+        <p class="like">♡58,730</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <div class="album_box">
+      <div class="album_box_left">
+        <input id="chat_chk" type="checkbox">
+        <p class="rank">15 -</p>
+        <p><img src="../img/chart/15등.jpg" alt="15"></p>
+        <p class="data">파이팅 해야지 (Feat. 이영지)</br><small>부석순 (SEVENTEEN)</small></p>
+        <p class="name">SECOND WIND</p>
+        <p class="like">♡131,474</p>
+      </div>
+      <div class="album_box_right">
+        <label for="chk" class="chk_btn">
+          <i class="fas fa-play chk_btn"></i>
+        </label>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-download"></i>
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+
+    <input type="checkbox" id="slot">
+
+    <label for="slot" class="slot01">
+      <div class="slot_box">
+        <p>차트 더보기</p>
+      </div>
+    </label>
+
+
+    <div class="album2">
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">16 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="16"></p>
+          <p class="data">다시 만날 수 있을까</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡73,334</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">17 -</p>
+          <p><img src="../img/chart/17등.jpg" alt="17"></p>
+          <p class="data">FRIEND THE END</br><small>볼빨간사춘기</small></p>
+          <p class="name">사랑.zip</p>
+          <p class="like">♡13,020</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">18 -</p>
+          <p><img src="../img/chart/18,21등.jpg" alt="18"></p>
+          <p class="data">London Boy</br><small>임영웅</small></p>
+          <p class="name">Polaroid</p>
+          <p class="like">♡48,386</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">19 -</p>
+          <p><img src="../img/chart/19등.jpg" alt="19"></p>
+          <p class="data">심(心)</br><small>DK(디셈버)</small></p>
+          <p class="name">심(心)</p>
+          <p class="like">♡98,098</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">20 -</p>
+          <p><img src="../img/chart/20등.jpg" alt="20"></p>
+          <p class="data">밤이 무서워요 (Lonely Night)</br><small>주주 시크릿</small></p>
+          <p class="name">밤이 무서워요 (Lonely Night)</p>
+          <p class="like">♡25,533</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">21 -</p>
+          <p><img src="../img/chart/18,21등.jpg" alt="21"></p>
+          <p class="data">Polaroid</br><small>임영웅</small></p>
+          <p class="name">Polaroid</p>
+          <p class="like">♡43,683</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">22 -</p>
+          <p><img src="../img/chart/22등.jpg" alt="22"></p>
+          <p class="data">이제 나만 믿어요</br><small>내일은 미스터트롯 우승자</small></p>
+          <p class="name">임영웅</p>
+          <p class="like">♡166,214</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">23 -</p>
+          <p><img src="../img/chart/23등.jpg" alt="23"></p>
+          <p class="data">on the street (with J. Cole)</br><small>on the street (with J. Cole)</small></p>
+          <p class="name">j-hope, J. Cole</p>
+          <p class="like">♡46,820</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">24 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="24"></p>
+          <p class="data">무지개</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡61,340</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">25 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="25"></p>
+          <p class="data">아버지</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡50,645</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">26 -</p>
+          <p><img src="../img/chart/26등.jpg" alt="26"></p>
+          <p class="data">After LIKE</br><small>IVE (아이브)</small></p>
+          <p class="name">After LIKE</p>
+          <p class="like">♡224,736</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">27 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="27"></p>
+          <p class="data">A bientot</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡48,441</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">28 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="28"></p>
+          <p class="data">인생찬가</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡47,247</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">29 -</p>
+          <p><img src="../img/chart/16,24,25,27,28,29.jpg" alt="29"></p>
+          <p class="data">손이 참 곱던 그대</br><small>임영웅</small></p>
+          <p class="name">IM HERO</p>
+          <p class="like">♡46,600</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <div class="album_box">
+        <div class="album_box_left">
+          <input id="chat_chk" type="checkbox">
+          <p class="rank">30 -</p>
+          <p><img src="../img/chart/30등.jpg" alt="30"></p>
+          <p class="data">Attention</br><small>NewJeans</small></p>
+          <p class="name">NewJeans 1st EP 'New Jeans'</p>
+          <p class="like">♡220,186</p>
+        </div>
+        <div class="album_box_right">
+          <label for="chk" class="chk_btn">
+            <i class="fas fa-play chk_btn"></i>
+          </label>
+          <i class="fas fa-plus"></i>
+          <i class="fas fa-download"></i>
+          <i class="fas fa-video"></i>
+        </div>
+      </div>
+
+      <input type="checkbox" id="slot2">
+
+      <label for="slot2" class="slot02">
+        <div class="slot_box">
+          <p>차트 더보기</p>
+        </div>
+      </label>
+
+
+      <div class="album3">
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">31 -</p>
+            <p><img src="../img/chart/31등.jpg" alt="31"></p>
+            <p class="data">나비무덤</br><small>포맨 (4MEN)</small></p>
+            <p class="name">나비무덤</p>
+            <p class="like">♡17,614</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">32 -</p>
+            <p><img src="../img/chart/32등.jpg" alt="32"></p>
+            <p class="data">Perfume</br><small>NCT 도재정</small></p>
+            <p class="name">Perfume - The 1st Mini Album</p>
+            <p class="like">♡35,361</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">33 -</p>
+            <p><img src="../img/chart/33,34,38.jpg" alt="33"></p>
+            <p class="data">연애편지</br><small>IM HERO</small></p>
+            <p class="name">임영웅</p>
+            <p class="like">♡45,711</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">34 -</p>
+            <p><img src="../img/chart/33,34,38.jpg" alt="34"></p>
+            <p class="data">사랑해 진짜</br><small>IM HERO</small></p>
+            <p class="name">임영웅</p>
+            <p class="like">♡47,637</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">35 -</p>
+            <p><img src="../img/chart/35등.jpg" alt="35"></p>
+            <p class="data">ANTIFRAGILE</br><small>LE SSERAFIM (르세라핌)</small></p>
+            <p class="name">ANTIFRAGILE</p>
+            <p class="like">♡156,848</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">36 -</p>
+            <p><img src="../img/chart/36등.jpg" alt="36"></p>
+            <p class="data">LOVE DIVE</br><small>IVE (아이브)</small></p>
+            <p class="name">LOVE DIVE</p>
+            <p class="like">♡232,418</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">37 -</p>
+            <p><img src="../img/chart/37등.jpg" alt="37"></p>
+            <p class="data">Nostalgia</br><small>우디 (Woody)</small></p>
+            <p class="name">Nostalgia</p>
+            <p class="like">♡35,660</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">38 -</p>
+            <p><img src="../img/chart/33,34,38.jpg" alt="38"></p>
+            <p class="data">보금자리</br><small>임영웅</small></p>
+            <p class="name">IM HERO</p>
+            <p class="like">♡45,030</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">39 -</p>
+            <p><img src="../img/chart/39등.jpg" alt="39"></p>
+            <p class="data">Zero</br><small>NewJeans</small></p>
+            <p class="name">Zero</p>
+            <p class="like">♡37,974</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">40 -</p>
+            <p><img src="../img/chart/40등.jpg" alt="40"></p>
+            <p class="data">사랑하지 않아서 그랬어</br><small>임한별</small></p>
+            <p class="name">사랑하지 않아서 그랬어</p>
+            <p class="like">♡11,143</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">41 -</p>
+            <p><img src="../img/chart/41등.jpg" alt="41"></p>
+            <p class="data">사랑하기 싫어</br><small>지아</small></p>
+            <p class="name">사랑하기 싫어</p>
+            <p class="like">♡30,260</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">42 -</p>
+            <p><img src="../img/chart/42등.jpg" alt="42"></p>
+            <p class="data">NIGHT DANCER</br><small>imase</small></p>
+            <p class="name">NIGHT DANCER</p>
+            <p class="like">♡48,441</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">43 -</p>
+            <p><img src="../img/chart/43등.jpg" alt="43"></p>
+            <p class="data">Cupid</br><small>FIFTY FIFTY</small></p>
+            <p class="name">The Beginning: Cupid</p>
+            <p class="like">♡41,582</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">44 -</p>
+            <p><img src="../img/chart/44등.jpg" alt="44"></p>
+            <p class="data">너를 보는게 지친 하루에</br><small>송하예</small></p>
+            <p class="name">너를 보는게 지친 하루에</p>
+            <p class="like">♡19,508</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">45 -</p>
+            <p><img src="../img/chart/45등.jpg" alt="45"></p>
+            <p class="data">Attention</br><small>NewJeans</small></p>
+            <p class="name">NewJeans 1st EP 'New Jeans'</p>
+            <p class="like">♡220,186</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">46 -</p>
+            <p><img src="../img/chart/46등.jpg" alt="46"></p>
+            <p class="data">발걸음</br><small>DK(디셈버)</small></p>
+            <p class="name">발걸음</p>
+            <p class="like">♡17,164</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">47 -</p>
+            <p><img src="../img/chart/47등.jpg" alt="47"></p>
+            <p class="data">VIBE (feat. Jimin of BTS)</br><small>태양</small></p>
+            <p class="name">VIBE (feat. Jimin of BTS)</p>
+            <p class="like">♡94,454</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">48 -</p>
+            <p><img src="../img/chart/48등.jpg" alt="48"></p>
+            <p class="data">Dangerously</br><small>Charlie Puth</small></p>
+            <p class="name">Nine Track Mind (Deluxe Edition)</p>
+            <p class="like">♡150,083</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">49 -</p>
+            <p><img src="../img/chart/49등.jpg" alt="49"></p>
+            <p class="data">너의 모든 순간</br><small>성시경</small></p>
+            <p class="name">별에서 온 그대 OST Part.7</p>
+            <p class="like">♡259,042</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="album_box">
+          <div class="album_box_left">
+            <input id="chat_chk" type="checkbox">
+            <p class="rank">50 -</p>
+            <p><img src="../img/chart/50등.jpg" alt="50"></p>
+            <p class="data">Dynamite</br><small>방탄소년단</small></p>
+            <p class="name">Dynamite (DayTime Version)'</p>
+            <p class="like">♡420,186</p>
+          </div>
+          <div class="album_box_right">
+            <label for="chk" class="chk_btn">
+              <i class="fas fa-play chk_btn"></i>
+            </label>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-download"></i>
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+      </div> <!-- album3 -->
+
+    </div> <!-- album2 -->
+
+  </div> <!-- album -->
+
+
+  <div class="hello">안녕하세용</div>
+
+
+  <div class="top_btn">
+    <a href="#">
+      <i class="fas fa-chevron-up"></i>
+      <div class="top_btn2">
+        올라가세요~
+      </div>
+    </a>
+  </div>
+
+  <!-- ---------------- -->
+  <div class="border_line"></div>
+
+  <footer class="footer">
+    <div class="footer_up">
+      <li>
+        <h4>공지사항</h4>
+      </li>
+      <li><a href="">[멜론 서비스 점검안내]</a></li>
+      <li>2023.04.17</li>
+    </div>
+    <div class="footer_middle">
+      <li>멜론6.0 둘러보기</li>
+      <li>멜론스튜디오</li>
+      <li>window플레이어</li>
+      <li>mac플레이어</li>
+      <li>ipad</li>
+      <li>고객센터</li>
+    </div>
+  </footer>
+
+  <div class="border_line2"></div>
+
+  <footer class="footer2">
+    <ul class="footer_up2">
+      <li>이용약관</li>
+      <li>위치기반서비스 이용약관</li>
+      <li>개인정보처리방침</li>
+      <li>청소년보호정책</li>
+      <li>제휴/프로모션문의</li>
+      <li>이메일주소무단수집거부</li>
+      <li>파트너센터</li>
+    </ul>
+    <ul class="footer_middle">
+      <li>(주)카카오엔터테인먼트</li>
+      <li>경기도 성남시 분당구 판교역로 221</li>
+      <li>대표이사 : 이진수,김성수</li>
+      <li>사업자등록번호:220-88-02594</li>
+      <li>통신판매업신고번호 : 2018-성남분당B-0004</li>
+      <li>
+        <사업자정보확인>
+      </li>
+    </ul>
+    <ul class="footer_under">
+      <li>문의전화 : 1566-7727 (평일 09:00-18:00,유료)</li>
+      <li>이메일 : melon_info@kakaoent.com</li>
+      <li>호스팅서비스사업자:(주)카카오엔터테인먼트</li>
+      <li>ⓒKakao Entertainment Corp.</li>
+    </ul>
+  </footer>
+
+</body>
+<script src="../js/jquery-3.6.4.min.js"></script>
+<script src="../js/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script>
+  $(document).ready(function () {
+    let height = $(".notice").height();
+    let num = $(".rolling li").length;
+    let max = height * num;
+    let move = 0;
+
+    function noticeRolling() {
+      move += height;
+      $(".rolling").stop().animate({
+        "top": -move
+      }, 600, function () {
+        if (move >= max) {
+          $(this).stop().css("top", 0);
+          move = 0;
+        };
+      });
+    };
+    noticeRollingOff = setInterval(noticeRolling, 3000);
+    $(".rolling").append($(".rolling li").first().clone());
+  });
+
+  $(function () {
+
+    $(window).scroll(function () {
+
+
+      if ($(window).scrollTop() >= 350) {
+
+        $('.chat_menu').addClass('fixed')
+        $('.chat_menu_new').addClass('fixed1')
+        $('.chat').addClass('fixed2')
+        $('.album').addClass('album_shot')
+
+      } else {
+        $('.chat_menu').removeClass('fixed')
+        $('.chat_menu_new').removeClass('fixed1')
+        $('.chat').removeClass('fixed2')
+        $('.album').removeClass('album_shot')
+      }
+
+
+    }) //window_scroll_event
+
+  })
+
+  $(document).ready(function () {
+    $('.album_slick').slick({
+      autoplay: true,
+      autoplaySpeed: 5500,
+    });
+  });
+
+  $(document).ready(function () {
+    $('.album_slick2').slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      dots: true,
+    });
+  });
+
+  let player = document.getElementById('player');
+
+  player.addEventListener("timeupdate", function () {
+    let currentTime = player.currentTime;
+    let duration = player.duration;
+    $('.hp_range').stop().animate({
+      'width': (currentTime + .25) / duration * 100 + '%'
+    }, 250, 'linear');
+
+    currentTime = Math.round(player.currentTime);
+    playtime = setTimeFormat(currentTime);
+
+    function setTimeFormat(sec_time) {
+      let sec_num = parseInt(sec_time);
+      let minutes = Math.floor(sec_num / 60);
+      let seconds = sec_num - (minutes * 60);
+
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      document.getElementById("time").innerHTML = minutes + ':' + seconds + ' / ' + '03:09';
+    }
+  });
+
+  btn_Stop.onclick = function () {
+    player.pause();
+    player.currentTime = 0;
+  }
+
+  vol.oninput = function () {
+    player.volume = vol.value / 100;
+  };
+</script>
+
+</html>
