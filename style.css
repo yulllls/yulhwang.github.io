@@ -1355,9 +1355,9 @@ li {
 #pause_btn::before {
   position: absolute;
   visibility: visible;
-  content: "\f28d";
-  font-weight: 400;
+  content: "\f28b";
   font-family: "Font Awesome 5 Free";
+  font-weight: 400;
   visibility: visible;
   font-size: 60px;
   top: -5px;
@@ -1383,8 +1383,8 @@ li {
 #btn_Stop::before {
   position: absolute;
   visibility: visible;
-  content: "\f04d";
-  font-weight: 900;
+  content: "\f28d";
+  font-weight: 400;
   font-family: "Font Awesome 5 Free";
   visibility: visible;
   font-size: 60px;
@@ -2973,7 +2973,7 @@ li {
 
   .mobile .mobile_lnb {
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .mobile .mobile_lnb li {
@@ -3003,7 +3003,7 @@ li {
   .mobile_music .mobile_music_menu {
     position: relative;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 35px;
     width: 160px;
     height: 27px;
     border: 1px solid #00CD3C;
@@ -3068,7 +3068,7 @@ li {
   }
 
   .mobile_music .album_slick {
-    margin-top: 10px;
+    margin-top: 15px;
     position: relative;
   }
 
@@ -3090,7 +3090,7 @@ li {
     top: -10px;
     left: 0;
     font-size: 30px;
-    color: #00CD3C;
+    color: rgba(0, 204, 61, 0.6);
     transition: 0.3s;
     font-size: 50px;
   }
@@ -3113,7 +3113,7 @@ li {
     top: -10px;
     left: 0px;
     font-size: 30px;
-    color: #00CD3C;
+    color: rgba(0, 204, 61, 0.6);
     transition: 0.3s;
     font-size: 50px;
   }
@@ -3123,7 +3123,7 @@ li {
   .mobile_chart .mobile_chart_menu {
     position: relative;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 35px;
     width: 160px;
     height: 27px;
     border: 1px solid #00CD3C;
@@ -3234,8 +3234,18 @@ li {
     padding-right: 0px;
   }
 
+  #vol{display: none;}
+
+  /* .player_ditto p {
+    display: block;
+  } */
+
   .player_ditto p {
-    display: none;
+    color: white;
+    float: left;
+    margin: -55px 0 0 75px;
+    width: 185px;
+    font-size: 14px;
   }
 
   .player_ditto img {
@@ -3246,9 +3256,10 @@ li {
 
   #play_btn {
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 7%;
     width: 30px;
     height: 30px;
+    margin-top: 35px;
   }
 
   #play_btn::before {
@@ -3259,6 +3270,7 @@ li {
     margin-right: 5%;
     width: 30px;
     height: 30px;
+    margin-top: 35px;
   }
 
   #pause_btn::before {
@@ -3268,6 +3280,7 @@ li {
   #btn_Stop {
     width: 30px;
     height: 30px;
+    margin-top: 35px;
   }
 
   #btn_Stop::before {
@@ -3303,7 +3316,8 @@ li {
   }
 
   #time {
-    margin-top: 15px;
+    margin-top: 35px;
+    font-size: 14px;
   }
 
   .mobile_mv {}
@@ -3311,7 +3325,7 @@ li {
   .mobile_mv .mobile_mv_menu {
     position: relative;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 35px;
     width: 160px;
     height: 27px;
     border: 1px solid #00CD3C;
