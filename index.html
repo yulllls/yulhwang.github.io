@@ -746,65 +746,66 @@
 
   <div class="music_recommend">
     <div class="music_overflow">
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천1.jpg" alt="1">
-          <li>널 사랑하겠어</br>이지형</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천2.jpg" alt="2">
-          <li>봄봄봄</br>로이킴</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천3.jpg" alt="3">
-          <li>봄사랑벚꽃말고</br>아이유</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천4.jpg" alt="4">
-          <li>벚꽃엔딩</br>버스커버스커</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천5.jpg" alt="5">
-          <li>봄이좋냐??</br>10cm</li>
-        </a>
-      </div>
+      <div class="music_roller">
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천1.jpg" alt="1">
+            <li>널 사랑하겠어</br>이지형</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천2.jpg" alt="2">
+            <li>봄봄봄</br>로이킴</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천3.jpg" alt="3">
+            <li>봄사랑벚꽃말고</br>아이유</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천4.jpg" alt="4">
+            <li>벚꽃엔딩</br>버스커버스커</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천5.jpg" alt="5">
+            <li>봄이좋냐??</br>10cm</li>
+          </a>
+        </div>
 
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천6.jpg" alt="6">
+            <li>우연히, 봄</br>로꼬</li>
+          </a>
+        </div>
 
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천6.jpg" alt="6">
-          <li>우연히, 봄</br>로꼬</li>
-        </a>
-      </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천7.jpg" alt="7">
+            <li>나만, 봄</br>볼빨간사춘기</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천8.jpg" alt="8">
+            <li>너란 봄 (Feat. 하림)</br>정은지</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천9.jpg" alt="9">
+            <li>봄 안녕 봄</br>아이유</li>
+          </a>
+        </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천10.jpg" alt="10">
+            <li>다시, 봄</br>정승환</li>
+          </a>
+        </div>
 
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천7.jpg" alt="7">
-          <li>나만, 봄</br>볼빨간사춘기</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천8.jpg" alt="8">
-          <li>너란 봄 (Feat. 하림)</br>정은지</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천9.jpg" alt="9">
-          <li>봄 안녕 봄</br>아이유</li>
-        </a>
-      </div>
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천10.jpg" alt="10">
-          <li>다시, 봄</br>정승환</li>
-        </a>
-      </div>
-
-      <div class="music_recommend_list">
-        <a href=""><img src="./img/수정한 추천11.jpg" alt="11">
-          <li>Easter egg</br>발견하셨습니다!</li>
-        </a>
-      </div>
+        <div class="music_recommend_list">
+          <a href=""><img src="../img/수정한 추천11.jpg" alt="11">
+            <li>하늘바라기 (Feat. 하림)</br>정은지</li>
+          </a>
+        </div>
+      </div> <!-- music_roller -->
     </div> <!-- music_overflow -->
   </div> <!-- music_recommend -->
 
@@ -1413,11 +1414,6 @@
   });
 
 
-  /*   $(document).ready(function(){
-    $('.music_recommend').slick({
-    });
-  }); 이달의 음악추천 슬릭용*/
-
   let player = document.getElementById('player');
 
   player.addEventListener("timeupdate", function () {
@@ -1456,6 +1452,73 @@
   vol.oninput = function () {
     player.volume = vol.value / 100;
   };
+
+
+  //DOM 생성 후
+  var originalID, cloneID; //인터벌 포인터
+  window.addEventListener('DOMContentLoaded', function () {
+
+    //롤링 배너 복제본 생성
+    let roller = document.querySelector('.music_overflow');
+    roller.id = 'roller1';
+
+    let clone = roller.cloneNode(true);
+    clone.id = 'roller2';
+    document.querySelector('.music_recommend').appendChild(clone); //부착
+
+    //원본, 복제본 배너 위치 지정
+    document.querySelector('#roller1').style.left = '0px';
+    document.querySelector('#roller2').style.left = document.querySelector('.music_roller').offsetWidth + 'px';
+
+    //클래스 할당
+    roller.classList.add('original');
+    clone.classList.add('clone');
+
+    //인터벌 메서드로 애니메이션 생성
+    let rollerWidth = document.querySelector('.music_roller').offsetWidth; //회전 배너 너비값
+    let betweenDistance = 1; //이동 크기 - 정수여야 함
+
+    //롤링 시작
+    function startRoller() {
+      originalID = window.setInterval(betweenRollCallback, parseInt(1400 / 100), betweenDistance, document
+        .querySelector('#roller1'));
+      cloneID = window.setInterval(betweenRollCallback, parseInt(1400 / 100), betweenDistance, document
+        .querySelector('#roller2'));
+    }
+
+    //롤링 정지
+    function stopRoller() {
+      clearInterval(originalID);
+      clearInterval(cloneID);
+    }
+
+    //마우스 호버시 롤링이 멈추었다 벗어나면 다시 롤링이 되도록 처리
+    document.getElementById('roller1').addEventListener('mouseover', () => {
+      stopRoller()
+    });
+    document.getElementById('roller2').addEventListener('mouseover', () => {
+      stopRoller()
+    });
+    document.getElementById('roller1').addEventListener('mouseout', () => {
+      startRoller()
+    });
+    document.getElementById('roller2').addEventListener('mouseout', () => {
+      startRoller()
+    });
+
+    //인터벌 애니메이션 함수(공용)
+    function betweenRollCallback(d, roller) {
+      let left = parseInt(roller.style.left);
+      roller.style.left = (left - d) + 'px'; //이동
+      //조건부 위치 리셋
+      if (rollerWidth + (left - d) <= 0) {
+        roller.style.left = rollerWidth + 'px';
+      }
+    }
+
+    startRoller(); //롤링 초기화 
+  });
+
 </script>
 
 
