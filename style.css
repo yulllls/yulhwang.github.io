@@ -615,6 +615,12 @@ li {
 .main2 .chart p {
   float: right;
 }
+/* ---------------------------------------------------------------- */
+/* .main2 .chart .ti{}
+.main2 .chart p:hover{
+  color: #00CD3C;
+  transform: rotateY( 180deg )
+} */
 
 .main2 .chart_list {
   width: 850px;
@@ -3062,6 +3068,7 @@ li {
     position: absolute;
     width: 75px;
     height: 20px;
+    line-height: 19px;
     box-sizing: border-box;
     border: 1px solid silver;
     border-radius: 10px;

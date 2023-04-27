@@ -2202,6 +2202,7 @@ li {
     position: absolute;
     width: 75px;
     height: 20px;
+    line-height: 19px;
     box-sizing: border-box;
     border: 1px solid silver;
     border-radius: 10px;
