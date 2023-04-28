@@ -970,6 +970,7 @@
         </div>
         <div class="login_txt">
           <p>로그인/회원가입</p>
+         <!-- 로그인 접속 메뉴 보여주기용 색상 변경 입니다 -->
         </div>
       </label>
       <div class="login_logo">
@@ -1062,8 +1063,7 @@
     <div class="mobile_music">
       <div class="mobile_music_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="">
-        <h4>최신음악</h4>
-        <!-- <p><a href="">전체보기</a></p> -->
+       <a href="./sub/sub.html"><h4>최신음악</h4></a>
       </div><!-- mobile_music_menu -->
 
       <div class="album_slick">
@@ -1211,7 +1211,7 @@
     <div class="mobile_chart">
       <div class="mobile_chart_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="">
-        <h4>멜론차트</h4>
+       <a href="./sub/sub.html"><h4>멜론차트</h4></a>
         <!-- <p><a href="">전체보기</a></p> -->
       </div><!-- mobile_chart_menu -->
 
@@ -1298,7 +1298,7 @@
       <div class="mobile_mv">
         <div class="mobile_mv_menu">
           <img src="./img/아이콘참고자료/로고.png" alt="">
-          <h4>뮤직비디오</h4>
+          <a href="./sub/sub.html"><h4>뮤직비디오</h4></a>
         </div><!-- mobile_mv_menu -->
 
         <div class="mobile_mv_list">
@@ -1331,7 +1331,7 @@
     <div class="mobile_ticket">
       <div class="mobile_ticket_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="로고">
-        <h4>멜론티켓</h4>
+        <a href="./sub/sub.html"><h4>멜론티켓</h4></a>
       </div><!-- mobile_mv_menu -->
 
       <div class="mobile_ticket_list">
@@ -1398,23 +1398,23 @@
 
 <script>
   $(document).ready(function () {
-    let height = $(".notice").height(); //공지사항의 높이값을 구해주고
-    let num = $(".rolling li").length; // 공지사항의 개수를 알아볼수 있어요! length라는 것으로!
-    let max = height * num; //그렇다면 총 높이를 알 수 있다
-    let move = 0; //초기값을 설정해줍니다
+    let height = $(".notice").height(); //공지사항의 높이값 
+    let num = $(".rolling li").length; // length 통해 공지사항의 개수 파악
+    let max = height * num; // 총 높이 계산
+    let move = 0; //초기값 설정
     function noticeRolling() {
-      move += height; //여기에서 += 이라는 것은 move = move + height 값이라는 뜻
+      move += height; //move = move + height
       $(".rolling").stop().animate({
         "top": -move
-      }, 600, function () { // animate를 통해서 부드럽게 top값을 올려줄거에요.
+      }, 600, function () { // top으로 속도 조절하기 
         if (move >= max) { //if문을 통해 최대값보다 top값을 많이 올렸다면 다시,
           $(this).stop().css("top", 0); //0으로 돌려주고
           move = 0; //초기값도 다시 0으로
         };
       });
     };
-    noticeRollingOff = setInterval(noticeRolling, 3000); //자동롤링답게 setInterval를 사용해서 1000 = 1초마다 함수 실행!
-    $(".rolling").append($(".rolling li").first().clone()); //올리다보면 마지막이 안보여서 clone을 통해 첫번째li 복사!
+    noticeRollingOff = setInterval(noticeRolling, 3000); // 자동롤링, setInterval를 사용해서 1000 = 1초마다 함수 실행
+    $(".rolling").append($(".rolling li").first().clone()); //올렸을 때 clone을 통해 첫번째li 복사 , 재실행
 
   });
 
@@ -1422,7 +1422,6 @@
     $('.album_slick').slick({
       autoplay: true,
       autoplaySpeed: 5500,
-      /*  variableWidth: true */
     });
   });
 
@@ -1431,9 +1430,8 @@
       autoplay: true,
       autoplaySpeed: 4000,
       dots: true,
-      /*  variableWidth: true */
     });
-  });
+  }); //slick 사용 
 
 
   let player = document.getElementById('player');
@@ -1442,23 +1440,22 @@
     let currentTime = player.currentTime;
     let duration = player.duration;
     $('.hp_range').stop().animate({
-      'width': (currentTime + .25) / duration * 100 + '%'
+      'width': (currentTime + .25) / duration * 100 + '%' // 계산값에 따라 width 값 출력
     }, 250, 'linear');
-    //250 밀리세컨드마다 재생시간 체크
+    //250 밀리세컨드마다 재생시간 체크 *더 느려지면 끊김 
 
-    /*document.getElementById("time").innerHTML = Math.floor(player.currentTime) + "/" + Math.floor(player.duration) + "(초)"; */
+    currentTime = Math.round(player.currentTime); //currentTime -> 현재 재생 시간 > 초 단위 계산
+    playtime = setTimeFormat(currentTime); 
 
-    currentTime = Math.round(player.currentTime);
-    playtime = setTimeFormat(currentTime);
-
-    function setTimeFormat(sec_time) {
+    //초 단위에 분 , 초 계산 
+    function setTimeFormat(sec_time) { 
       let sec_num = parseInt(sec_time);
-      let minutes = Math.floor(sec_num / 60);
+      let minutes = Math.floor(sec_num / 60); 
       let seconds = sec_num - (minutes * 60);
 
-      if (minutes < 10) {
+      if (minutes < 10) { 
         minutes = "0" + minutes;
-      }
+      } //10이 더 크면 임의의 값 0 추가 
       if (seconds < 10) {
         seconds = "0" + seconds;
       }
@@ -1469,11 +1466,11 @@
   btn_Stop.onclick = function () {
     player.pause();
     player.currentTime = 0;
-  }
+  } //정지 , 및 현재시간 초기화 
 
   vol.oninput = function () {
     player.volume = vol.value / 100;
-  };
+  }; //볼륨 조절 
 
 
   //DOM 생성 후
@@ -1572,7 +1569,7 @@
   $('.issue_list4').mouseout(function () {
     $('.issue_list .main_c4').stop().css('margin-left', '10px')
   })
-  //이슈 컨텐츠 
+  //이슈 컨텐츠 마우스 오버 , 아웃 시 텍스트 margin-left 값 조정
 </script>
 
 
