@@ -1631,6 +1631,8 @@ li {
   display: none;
 }
 
+.mobile_ticket{display: none;}
+
 @media all and (max-width : 1279px) {
   .header {
     width: 1024px;
@@ -2818,6 +2820,7 @@ li {
   }
 
 
+  .mobile_ticket{display: block;}
 
   #hamburger_chk {
     display: none;
