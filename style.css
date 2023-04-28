@@ -14,6 +14,8 @@ a {
   text-decoration: none;
 }
 
+html{scroll-behavior: smooth;}
+
 @font-face {
   font-family: 'LINESeedKR-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
@@ -3253,8 +3255,8 @@ li {
     position: absolute;
     width: 23px;
     height: 23px;
-    top: 1px;
-    left: 35px;
+    top: 0px;
+    left: 37px;
   }
 
   .mobile_music .album_slick .album_line {
@@ -3373,8 +3375,8 @@ li {
     position: absolute;
     width: 23px;
     height: 23px;
-    top: 1px;
-    left: 35px;
+    top: 0px;
+    left: 37px;
   }
 
   .mobile .chart_list {
@@ -3600,8 +3602,8 @@ li {
     position: absolute;
     width: 23px;
     height: 23px;
-    top: 1px;
-    left: 30px;
+    top: 0px;
+    left: 32px;
   }
 
   .mobile_mv .mobile_mv_list {
@@ -3662,8 +3664,8 @@ li {
     position: absolute;
     width: 23px;
     height: 23px;
-    top: 1px;
-    left: 30px;
+    top: 0px;
+    left: 37px;
   }
 
   .mobile_ticket .mobile_ticket_list{
