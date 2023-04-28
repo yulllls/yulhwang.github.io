@@ -370,7 +370,8 @@ li {
   z-index: 10;
 }
 
-.t100_time p {
+.t100_time span{
+  display: flex;
   margin: 0 auto;
   margin-top: 60px;
   width: 240px;
@@ -378,11 +379,27 @@ li {
   text-align: center;
 }
 
-.t100_time .st {
-  margin-left: 15px;
+.t100_time .ti {
+  display: flex;
   color: #00CD3C;
   font-size: 30px;
+  animation: tp 7s 1s infinite;
 }
+
+@keyframes tp{
+  0%{ transform: rotateX( 0deg )}
+  10%{ transform: rotateX( 0deg )}
+  20%{ transform: rotateX( 0deg )}
+  30%{ transform: rotateX( 0deg )}
+  40%{ transform: rotateX( 0deg )}
+  50%{ transform: rotateX( 0deg )}
+  60%{ transform: rotateX( 0deg )}
+  70%{ transform: rotateX( 0deg )}
+  80%{ transform: rotateX( 0deg )}
+  90%{ transform: rotateX( 0deg )}
+  100%{ transform: rotateX( 360deg )}
+}
+
 
 .chat_menu {
   width: 1280px;
@@ -440,8 +457,6 @@ li {
 .chat {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-
-  /*  margin-bottom: 300px; */
 }
 
 .chat_list {
@@ -600,8 +615,6 @@ li {
 
 .fixed {
   position: fixed;
-  /*   width: 1280px;
-  margin: 0 auto; */
   right: 0;
   left: 0;
   top: 0;
@@ -1304,7 +1317,6 @@ li {
 
   .t100_time p {
     margin: 0 auto;
-    margin-top: 60px;
     width: 240px;
 
   }
@@ -1355,9 +1367,13 @@ li {
     font-size: 12px;
   }
 
+  .fixed1 {
+    width: 1024px;
 }
 
-@media all and (max-width : 980px) {
+}
+
+@media all and (max-width : 1023px) {
   .header {
     width: 850px;
   }
@@ -1398,12 +1414,16 @@ li {
     width: 80%;
   }
 
+  .lnb .award{
+    display: none;
+  }
+
   .lnb .float {
-    width: 85px;
+    width: 97px;
   }
 
   .lnb .float li {
-    width: 95px;
+    width: 97px;
   }
 
   .lnb .lnb_right {
@@ -1421,7 +1441,6 @@ li {
 
   .t100_time p {
     margin: 0 auto;
-    margin-top: 60px;
     width: 240px;
 
   }
@@ -1491,10 +1510,15 @@ li {
     margin-left: 10px;
   }
 
+  .fixed1 {
+    width: 850px;
+}
+
 }
 
 
 @media all and (max-width : 849px) {
+
   .header {
     width: 600px;
   }
@@ -1566,12 +1590,24 @@ li {
     width: 100%;
   }
 
+  .lnb .award{
+    display: none;
+  }
+
+  .lnb .float a h3 {
+    justify-content: center;
+}
+
   .lnb .float {
-    width: 75px;
+    width: 85px;
   }
 
   .lnb .float li {
-    width: 80px;
+    width: 85px;
+  }
+
+  .lnb .lnb_left ul{
+    width: 600px;
   }
 
   .lnb .float a,
@@ -1590,6 +1626,10 @@ li {
   .t100_time .st {
     font-size: 25px;
   }
+
+  .chat_menu {
+    width: 600px;
+}
 
   .chat_menu ul {
     padding: 5px 0 5px 0;
@@ -1622,7 +1662,8 @@ li {
     display: none;
   }
 
-  .chat_menu_new a {}
+  .chat_menu_new a {font-size: 14px;
+  margin-top: 8px;}
 
   .chat_list .chat_right {
     width: 16%;
@@ -1661,12 +1702,25 @@ li {
     width: 600px;
   }
 
+  .footer .footer_up{
+    font-size: 14px;
+  }
+
+  .footer .footer_middle li {
+    line-height: 63px;
+}
+
   .footer .footer_middle {
     margin-right: 10px;
+    font-size: 14px;
   }
 
   .footer2 {
     width: 600px;
+  }
+
+  .footer2 .footer_up2 li, .footer2 .footer_middle li, .footer2 .footer_under li{
+    font-size: 10px;
   }
 
   .player_ditto .player_ditto_left {
@@ -1760,6 +1814,11 @@ li {
     padding-right: 25px;
     margin-top: -100px;
   }
+
+  .fixed1 {
+    width: 600px;
+}
+
 
 }
 
@@ -2410,21 +2469,39 @@ li {
   }
 
   .mobile_time {
-    width: 25%;
+    width: 26%;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
 
   }
 
-  .mobile_time p {
+  .mobile_time span{
+    display: flex;
     font-size: 16px;
   }
 
-  .mobile_time .st {
-    margin-left: 5%;
+  .mobile_time .ti{
+    margin-left: 3%;
     color: #00CD3C;
+    font-size: 16px;
+    animation: tp 7s 1s infinite;
   }
+
+  @keyframes tp{
+    0%{ transform: rotateX( 0deg )}
+    10%{ transform: rotateX( 0deg )}
+    20%{ transform: rotateX( 0deg )}
+    30%{ transform: rotateX( 0deg )}
+    40%{ transform: rotateX( 0deg )}
+    50%{ transform: rotateX( 0deg )}
+    60%{ transform: rotateX( 0deg )}
+    70%{ transform: rotateX( 0deg )}
+    80%{ transform: rotateX( 0deg )}
+    90%{ transform: rotateX( 0deg )}
+    100%{ transform: rotateX( 360deg )}
+  }
+  
 
   .top {
     width: 30%;

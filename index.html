@@ -141,7 +141,7 @@
         <li class="float"><a class="float_txt" href="./sub/sub.html">
             <h3>멜론매거진</h3>
           </a></li>
-        <li class="float"><a class="float_txt" href="./sub/sub.html">
+        <li class="float award"><a class="float_txt" href="./sub/sub.html">
             <h3>뮤직어워드</h3>
           </a></li>
       </ul> <!-- lnb_left -->
@@ -473,11 +473,7 @@
   </main>
 
   <input type="checkbox" id="chk">
-  <!-- <img class="ditto" src="../img/chart/1,2등.jpg" alt="ditto"> -->
   <label for="chk" class="chk_btn">
-    <!--    <i class="far fa-play-circle"></i>
-      <p>뉴진스 - ditto 듣기</p>
-      <p>하단의 플레이 리스트가 나타 나면 재생 버튼을 눌러주세요</p> -->
   </label>
 
   <div class="main2">
@@ -485,8 +481,9 @@
       <a href="./sub/sub.html">
         <h4>실시간 차트</h4>
       </a>
-      <p>2023년 04월 17일 <strong class="ti">15:00</strong> 기준</p>
-
+      <div class="chart_time">
+        <span>2023년 04월 17일 <p class="ti">&nbsp15:00</p>&nbsp기준</span>
+      </div>
 
       <div class="chart_list">
         <ul class="a1">
@@ -700,38 +697,38 @@
     <div class="issue">
       <h4>이슈가 되는 아티스트들의 컨텐츠</h4>
 
-      <a href="" class="issue_list">
+      <a href="" class="issue_list issue_list1">
         <div class="img_hidden">
           <img src="./img/이슈1.jpg" alt="이슈1">
         </div>
-        <p class="main_c">래원(Lauone)의 일기장 마지막 chapter</p>
+        <p class="main_c main_c1">래원(Lauone)의 일기장 마지막 chapter, [y=f(x)]</p>
         <p class="sub">매거진 이벤트</p>
         <p class="point">맬론매거진</p>
       </a>
 
-      <a href="" class="issue_list">
+      <a href="" class="issue_list issue_list2">
         <div class="img_hidden">
           <img src="./img/이슈2.jpg" alt="이슈2">
         </div>
-        <p class="main_c">90년대 당시 트렌드를 이끌었던 장본인,장우혁[FEEL IT]</p>
+        <p class="main_c main_c2">90년대 당시 트렌드를 이끌었던 장본인,장우혁[FEEL IT]</p>
         <p class="sub">비하인드 컷</p>
         <p class="point">맬론매거진</p>
       </a>
 
-      <a href="" class="issue_list">
+      <a href="" class="issue_list issue_list3">
         <div class="img_hidden">
           <img src="./img/이슈3.jpg" alt="이슈3">
         </div>
-        <p class="main_c">앨범을 이해하기 위한 몇가지 이야기. Miley Cyrus</p>
+        <p class="main_c main_c3">앨범을 이해하기 위한 몇가지 이야기. Miley Cyrus</p>
         <p class="sub">비하인드 컷</p>
         <p class="point">맬론매거진</p>
       </a>
 
-      <a href="" class="issue_list">
+      <a href="" class="issue_list issue_list4">
         <div class="img_hidden">
           <img src="./img/이슈4.jpg" alt="이슈4">
         </div>
-        <p class="main_c">마음을 촉촉하게 적셔줄, 2F(신용재,김원주)표 감성 발라드</p>
+        <p class="main_c main_c4">마음을 촉촉하게 적셔줄, 2F(신용재,김원주)표 감성 발라드</p>
         <p class="sub">비하인드 컷</p>
         <p class="point">맬론매거진</p>
       </a>
@@ -1053,7 +1050,7 @@
 
     <div class="mobile_lnb">
       <ul>
-        <li><a href="./sub/sub.html">홈</a></li>
+        <li><a class="home" href="./sub/sub.html">홈</a></li>
         <li><a href="./sub/sub.html">최신음악</a></li>
         <li><a href="./sub/sub.html">멜론차트</a></li>
         <li><a href="./sub/sub.html">뮤직비디오</a></li>
@@ -1331,6 +1328,30 @@
     </div> <!-- mobile_mv -->
 
 
+    <div class="mobile_ticket">
+      <div class="mobile_ticket_menu">
+        <img src="./img/아이콘참고자료/로고.png" alt="로고">
+        <h4>멜론티켓</h4>
+      </div><!-- mobile_mv_menu -->
+
+      <div class="mobile_ticket_list">
+        <div class="mobile_ticket_box1 mobile_ticket_box">
+          <img src="./img/티켓1.png" alt="티켓1">
+          <p>PEAK FESTIVAL2023</p>
+          <p>2023.05.27 ~ 2023.05.28</p>
+          <small>10cm,넬,볼빨간사춘기</small>
+        </div>
+
+        <div class="mobile_ticket_box2 mobile_ticket_box">
+          <img src="./img/티켓2.png" alt="티켓2">
+          <p>청춘페스티벌2023</p>
+          <p>2023.05.05 ~ 2023.05.07</p>
+          <small>윤하,원슈타인,다나카</small>
+        </div>
+      </div>
+
+    </div> <!-- mobile_ticket -->
+
     <a class="top" href="#">
       <i class="fas fa-angle-double-up"></i>맨 위로
     </a>
@@ -1372,7 +1393,6 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
@@ -1396,18 +1416,13 @@
     noticeRollingOff = setInterval(noticeRolling, 3000); //자동롤링답게 setInterval를 사용해서 1000 = 1초마다 함수 실행!
     $(".rolling").append($(".rolling li").first().clone()); //올리다보면 마지막이 안보여서 clone을 통해 첫번째li 복사!
 
-    /*   $(".rolling_stop").click(function () {
-        clearInterval(noticeRollingOff); //stop을 누르면 clearInterval을 통해 자동롤링을 해제합니다.
-      });
-      $(".rolling_start").click(function () {
-        noticeRollingOff = setInterval(noticeRolling, 1000); //다시 start를 누르면 자동롤링이 실행하도록!
-      }); */
   });
 
   $(document).ready(function () {
     $('.album_slick').slick({
       autoplay: true,
       autoplaySpeed: 5500,
+      /*  variableWidth: true */
     });
   });
 
@@ -1416,6 +1431,7 @@
       autoplay: true,
       autoplaySpeed: 4000,
       dots: true,
+      /*  variableWidth: true */
     });
   });
 
@@ -1525,6 +1541,38 @@
     startRoller(); //롤링 초기화 
   });
 
+  $('.issue_list1').mouseover(function () {
+    $('.issue_list .main_c1').stop().css("margin-left", "-85%")
+  })
+
+  $('.issue_list1').mouseout(function () {
+    $('.issue_list .main_c').stop().css('margin-left', '10px')
+  })
+
+  $('.issue_list2').mouseover(function () {
+    $('.issue_list .main_c2').stop().css("margin-left", "-100%")
+  })
+
+  $('.issue_list2').mouseout(function () {
+    $('.issue_list .main_c2').stop().css('margin-left', '10px')
+  })
+
+  $('.issue_list3').mouseover(function () {
+    $('.issue_list .main_c3').stop().css("margin-left", "-80%")
+  })
+
+  $('.issue_list3').mouseout(function () {
+    $('.issue_list .main_c3').stop().css('margin-left', '10px')
+  })
+
+  $('.issue_list4').mouseover(function () {
+    $('.issue_list .main_c4').stop().css("margin-left", "-115%")
+  })
+
+  $('.issue_list4').mouseout(function () {
+    $('.issue_list .main_c4').stop().css('margin-left', '10px')
+  })
+  //이슈 컨텐츠 
 </script>
 
 
