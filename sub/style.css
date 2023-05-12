@@ -323,6 +323,7 @@ li {
   height: 40px;
   background-color: #00CD3C;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .lnb .lnb_right li a {
@@ -368,18 +369,23 @@ li {
   margin: 0 auto;
   overflow: hidden;
   z-index: 10;
+  display: flex;
+  justify-content: center;
 }
 
-.t100_time span{
+.t100_t {
   display: flex;
+  width: 367px;
+}
+
+.t100_time p{
   margin: 0 auto;
   margin-top: 60px;
-  width: 240px;
   font-size: 30px;
   text-align: center;
 }
 
-.t100_time .ti {
+.t100_time #hours {
   display: flex;
   color: #00CD3C;
   font-size: 30px;
@@ -1315,10 +1321,14 @@ li {
     width: 100%;
   }
 
+  .t100_t {
+    display: flex;
+    width: 367px;
+  }
+
   .t100_time p {
     margin: 0 auto;
-    width: 240px;
-
+    line-height: 170px;
   }
 
   .chat_menu_new a {
@@ -1439,12 +1449,7 @@ li {
     width: 100%;
   }
 
-  .t100_time p {
-    margin: 0 auto;
-    width: 240px;
-
-  }
-
+ 
   .chat_list {
     width: 850px;
   }
@@ -1623,9 +1628,16 @@ li {
   }
 
   .t100_time p,
-  .t100_time .st {
+  .t100_time .st,
+  .t100_time #hours {
     font-size: 25px;
   }
+
+
+  .t100_t {
+    display: flex;
+    width: 306px;
+}
 
   .chat_menu {
     width: 600px;
@@ -1934,7 +1946,6 @@ li {
     font-size: 25px;
     cursor: pointer;
   }
-
 
 
   #hamburger_chk {
@@ -2486,24 +2497,25 @@ li {
   }
 
   .mobile_time {
-    width: 26%;
+    display: flex;
+    width: 30%;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    justify-content: center;
   }
 
-  .mobile_time span{
-    display: flex;
+  .mobile_time p{
     font-size: 16px;
   }
 
-  .mobile_time .ti{
+  .mobile_time #m_hours{
     margin-left: 3%;
     color: #00CD3C;
     font-size: 16px;
     animation: tp 7s 1s infinite;
   }
+  
 
   @keyframes tp{
     0%{ transform: rotateX( 0deg )}
@@ -2597,10 +2609,6 @@ li {
   .mobile_chart_menu .mc3 {
     width: 30%;
     text-align: right;
-  }
-
-  .mobile_time {
-    display: block;
   }
 
   .mobile_chart_menu {

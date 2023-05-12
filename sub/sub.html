@@ -135,7 +135,11 @@
 
   <div class="bottom_color_white">
     <div class="t100_time">
-      <span>2023.04.17 <p class="ti">&nbsp15:00</p></span>
+      <div class="t100_t">
+     <!--  <span>2023.04.17 <p class="ti">&nbsp15:00</p></span> -->
+     <p id="clock">년/월/일</p>
+     <p id="hours">00:00:00</p>
+    </div>
     </div>
   </div>
 
@@ -1394,7 +1398,9 @@
     </div>
 
     <div class="mobile_time">
-      <span>2023.04.17<p class="ti">15:00</p></span>
+      <!-- <span>2023.04.17<p class="ti">15:00</p></span> -->
+      <p id="m_clock">년/월/일</p>
+      <p id="m_hours">00:00:00</p>
     </div>
 
     <div class="mobile_chart_menu">
@@ -2382,35 +2388,36 @@
     </div> <!-- album -->
   
 
+    <a class="top" href="#"> 
+      <i class="fas fa-angle-double-up"></i>맨 위로
+    </a>
+  
+    <footer class="mobile_footer">
+      <ul class="footer_up">
+        <li>이용약관</li>
+        <li>위치기반서비스 이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>청소년보호정책</li>
+      </ul>
+      <ul class="footer_middle">
+        <li>(주)카카오엔터테인먼트</li>
+        <li>경기도 성남시 분당구 판교역로 221</li>
+        <li>대표이사 : 이진수,김성수</li>
+        <li>사업자등록번호:220-88-02594</li>
+        <li>통신판매업신고번호 : 2018-성남분당B-0004</li>
+        <li>
+          <사업자정보확인>
+        </li>
+        <li>호스팅서비스사업자:(주)카카오엔터테인먼트</li>
+      </ul>
+      <ul class="footer_under">
+        <li>이메일 : melon_info@kakaoent.com</li>
+        <li>ⓒKakao Entertainment Corp.</li>
+      </ul>
+    </footer>
 
-  </div> 
-  <a class="top" href="#"> 
-    <i class="fas fa-angle-double-up"></i>맨 위로
-  </a>
-
-  <footer class="mobile_footer">
-    <ul class="footer_up">
-      <li>이용약관</li>
-      <li>위치기반서비스 이용약관</li>
-      <li>개인정보처리방침</li>
-      <li>청소년보호정책</li>
-    </ul>
-    <ul class="footer_middle">
-      <li>(주)카카오엔터테인먼트</li>
-      <li>경기도 성남시 분당구 판교역로 221</li>
-      <li>대표이사 : 이진수,김성수</li>
-      <li>사업자등록번호:220-88-02594</li>
-      <li>통신판매업신고번호 : 2018-성남분당B-0004</li>
-      <li>
-        <사업자정보확인>
-      </li>
-      <li>호스팅서비스사업자:(주)카카오엔터테인먼트</li>
-    </ul>
-    <ul class="footer_under">
-      <li>이메일 : melon_info@kakaoent.com</li>
-      <li>ⓒKakao Entertainment Corp.</li>
-    </ul>
-  </footer>
+  </div> <!-- mobile -->
+ 
 
 
 
@@ -2516,6 +2523,152 @@
   vol.oninput = function () {
     player.volume = vol.value / 100;
   };
+
+  $('.top_btn').on('click', function(){
+        $('html, body').animate({scrollTop:0}, 500);
+        return false;
+    })
+
+    $('.top').on('click', function(){
+      $('html, body').animate({scrollTop:0}, 500);
+    })
+
+
+    function clock() {
+    let date = new Date();
+    // date Object를 받아오고 
+    
+    let year = date.getFullYear();
+    // 년
+
+    let month = date.getMonth();
+    // 달
+
+    let day = date.getDay();
+    // 몇일 
+
+    if (month){
+      month = month+1;
+    }
+
+    //월은 0부터 시작해서 1을 더해줘야 1월로 나타남
+
+    if (day) {
+      day = day + 7;
+    }
+
+    if (month < 10) {
+      month = '0' + month;
+      }
+
+    if (day < 10 ){
+      day = '0' + day;
+    }  
+
+    document.getElementById('clock').innerHTML= year + '년'+'&nbsp;' + month + '월' + '&nbsp;' + day + '일' +'&nbsp;';
+    
+
+}
+
+function hours() {
+    let date = new Date();
+    // date Object를 받아오고 
+
+    let hours = date.getHours();
+    // 시간 
+
+    let minutes = date.getMinutes();
+    // 분
+
+    let seconds = date.getSeconds();
+    // 초
+
+    if (minutes < 10 ){
+      minutes = '0' + minutes;
+    }
+    if (hours < 10 ){
+      hours = '0' + hours;
+    }
+    if (seconds < 10 ){
+      seconds = '0' + seconds;
+    }
+
+    document.getElementById('hours').innerHTML= hours + ':' + minutes +':' + seconds ;
+    
+
+}
+
+clock();
+setInterval(clock, 1000); 
+//setInterval이라는 함수로 매초마다 실행
+
+hours();
+setInterval(hours, 1000); 
+
+function m_clock() {
+    let date = new Date();
+    // date Object를 받아오고 
+    
+    let year = date.getFullYear();
+    // 년
+
+    let month = date.getMonth();
+    // 달
+
+    let day = date.getDay();
+    // 몇일 
+
+    if (month){
+      month = month+1;
+    }
+
+    //월은 0부터 시작해서 1을 더해줘야 1월로 나타남
+
+    if (month < 10) {
+      month = '0' + month;
+      }
+
+    if (day < 10 ){
+      day = '0' + day;
+    }  
+
+    document.getElementById('m_clock').innerHTML= year + '.'+'&nbsp;' + month + '.' + '&nbsp;' + day + '.' +'&nbsp;';
+    
+
+}
+
+function m_hours() {
+    let date = new Date();
+    // date Object를 받아오고 
+
+    let hours = date.getHours();
+    // 시간 
+
+    let minutes = date.getMinutes();
+    // 분
+
+    if (minutes < 10 ){
+      minutes = '0' + minutes;
+    }
+    if (hours < 10 ){
+      hours = '0' + hours;
+    }
+  
+
+    document.getElementById('m_hours').innerHTML= hours + ':' + minutes ;
+    
+
+}
+
+m_clock();
+setInterval(m_clock, 1000); 
+//setInterval이라는 함수로 매초마다 실행
+
+m_hours();
+setInterval(m_hours, 1000); 
+
+
+
 </script>
 
 </html>

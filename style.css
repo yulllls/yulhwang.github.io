@@ -14,8 +14,6 @@ a {
   text-decoration: none;
 }
 
-html{scroll-behavior: smooth;}
-
 @font-face {
   font-family: 'LINESeedKR-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
@@ -301,12 +299,6 @@ li {
 
 .lnb .lnb_left .float li a:hover {
   color: #00CD3C;
-  ;
-}
-
-
-.lnb .lnb_left .float .float_txt:hover {
-  color: #00CD3C;
 }
 
 .lnb .lnb_right {
@@ -320,6 +312,7 @@ li {
   height: 40px;
   background-color: #00CD3C;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .lnb .lnb_right li a {
@@ -364,11 +357,15 @@ li {
 .main .new_album .album_box {
   float: left;
   width: 860px;
-  height: 420px;
+  height: 464px;
+  overflow: hidden; 
 }
 
 .main .new_album .album_box .album_line {
   width: 860px;
+}
+
+.main .new_album .album_slick {
 }
 
 .main .new_album .album_slick .album_box {}
@@ -377,7 +374,6 @@ li {
   float: left;
   width: 205px;
   height: 205px;
-  background-color: #00CD3C;
   margin-right: 10px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -607,21 +603,26 @@ li {
   overflow: hidden;
 }
 
-.main2 .chart h4 {
+.main2 .chart h4{
   float: left;
   font-size: 18px;
   color: black;
   margin-bottom: 10px;
 }
 
-.main2 .chart_time{}
+.main2 .chart_time{
+  display: flex;
+  justify-content: flex-end;
+}
 
 .main2 .chart span {
   display: flex;  
   justify-content: flex-end;
 }
 /* ---------------------------------------------------------------- */
-.main2 .chart p{
+
+
+#hours{
   transition: all 0.3s linear;
   animation-name: tp;
   animation-duration: 7s;

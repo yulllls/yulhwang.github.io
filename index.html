@@ -74,7 +74,7 @@
 
       <ul class="lnb_left">
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft1" href="./sub/sub.html">
             <h3>멜론차트</h3>
           </a>
           <ul>
@@ -86,7 +86,7 @@
           </ul>
         </li>
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft2" href="./sub/sub.html">
             <h3>최신음악</h3>
           </a>
           <ul>
@@ -96,7 +96,7 @@
           </ul>
         </li>
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft3" href="./sub/sub.html">
             <h3>장르음악</h3>
           </a>
           <ul>
@@ -106,7 +106,7 @@
           </ul>
         </li>
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft4" href="./sub/sub.html">
             <h3>멜론DJ</h3>
           </a>
           <ul>
@@ -118,7 +118,7 @@
           </ul>
         </li>
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft5" href="./sub/sub.html">
             <h3>멜론TV</h3>
           </a>
           <ul>
@@ -129,7 +129,7 @@
           </ul>
         </li>
         <li class="float">
-          <a class="float_txt" href="./sub/sub.html">
+          <a class="float_txt ft6" href="./sub/sub.html">
             <h3>스타포스트</h3>
           </a>
           <ul>
@@ -138,10 +138,10 @@
             <li><a href="#">마이 랭킹</a></li>
           </ul>
         </li>
-        <li class="float"><a class="float_txt" href="./sub/sub.html">
+        <li class="float"><a class="float_txt ft7" href="./sub/sub.html">
             <h3>멜론매거진</h3>
           </a></li>
-        <li class="float award"><a class="float_txt" href="./sub/sub.html">
+        <li class="float award"><a class="float_txt ft8" href="./sub/sub.html">
             <h3>뮤직어워드</h3>
           </a></li>
       </ul> <!-- lnb_left -->
@@ -482,7 +482,10 @@
         <h4>실시간 차트</h4>
       </a>
       <div class="chart_time">
-        <span>2023년 04월 17일 <p class="ti">&nbsp15:00</p>&nbsp기준</span>
+        <!-- <span>2023년 04월 17일 <p class="ti">&nbsp15:00</p>&nbsp기준</span> -->
+        <p id="clock">년/월/일</p>
+        <p id="hours">00시</p>
+        <p>기준</p>
       </div>
 
       <div class="chart_list">
@@ -970,7 +973,7 @@
         </div>
         <div class="login_txt">
           <p>로그인/회원가입</p>
-         <!-- 로그인 접속 메뉴 보여주기용 색상 변경 입니다 -->
+          <!-- 로그인 접속 메뉴 보여주기용 색상 변경 입니다 -->
         </div>
       </label>
       <div class="login_logo">
@@ -1063,7 +1066,9 @@
     <div class="mobile_music">
       <div class="mobile_music_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="">
-       <a href="./sub/sub.html"><h4>최신음악</h4></a>
+        <a href="./sub/sub.html">
+          <h4>최신음악</h4>
+        </a>
       </div><!-- mobile_music_menu -->
 
       <div class="album_slick">
@@ -1211,7 +1216,9 @@
     <div class="mobile_chart">
       <div class="mobile_chart_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="">
-       <a href="./sub/sub.html"><h4>멜론차트</h4></a>
+        <a href="./sub/sub.html">
+          <h4>멜론차트</h4>
+        </a>
         <!-- <p><a href="">전체보기</a></p> -->
       </div><!-- mobile_chart_menu -->
 
@@ -1298,7 +1305,9 @@
       <div class="mobile_mv">
         <div class="mobile_mv_menu">
           <img src="./img/아이콘참고자료/로고.png" alt="">
-          <a href="./sub/sub.html"><h4>뮤직비디오</h4></a>
+          <a href="./sub/sub.html">
+            <h4>뮤직비디오</h4>
+          </a>
         </div><!-- mobile_mv_menu -->
 
         <div class="mobile_mv_list">
@@ -1331,7 +1340,9 @@
     <div class="mobile_ticket">
       <div class="mobile_ticket_menu">
         <img src="./img/아이콘참고자료/로고.png" alt="로고">
-        <a href="./sub/sub.html"><h4>멜론티켓</h4></a>
+        <a href="./sub/sub.html">
+          <h4>멜론티켓</h4>
+        </a>
       </div><!-- mobile_mv_menu -->
 
       <div class="mobile_ticket_list">
@@ -1383,7 +1394,7 @@
   </div> <!-- mobile -->
 
   <div class="top_btn">
-    <a href="#">
+    <a href="">
       <i class="fas fa-chevron-up"></i>
       <div class="top_btn2">
         올라가세요~!
@@ -1445,15 +1456,15 @@
     //250 밀리세컨드마다 재생시간 체크 *더 느려지면 끊김 
 
     currentTime = Math.round(player.currentTime); //currentTime -> 현재 재생 시간 > 초 단위 계산
-    playtime = setTimeFormat(currentTime); 
+    playtime = setTimeFormat(currentTime);
 
     //초 단위에 분 , 초 계산 
-    function setTimeFormat(sec_time) { 
+    function setTimeFormat(sec_time) {
       let sec_num = parseInt(sec_time);
-      let minutes = Math.floor(sec_num / 60); 
+      let minutes = Math.floor(sec_num / 60);
       let seconds = sec_num - (minutes * 60);
 
-      if (minutes < 10) { 
+      if (minutes < 10) {
         minutes = "0" + minutes;
       } //10이 더 크면 임의의 값 0 추가 
       if (seconds < 10) {
@@ -1570,6 +1581,166 @@
     $('.issue_list .main_c4').stop().css('margin-left', '10px')
   })
   //이슈 컨텐츠 마우스 오버 , 아웃 시 텍스트 margin-left 값 조정
+
+
+  //탑버튼 스크롤시 노출
+  /*   $(window).scroll(function(){
+          if($(window).scrollTop() > 350){
+              $('.top_btn').show();
+          }else{
+              $('.top_btn').hide();
+          }
+      }); */ //윈도우 스크롤 길이에 따른 탑 버튼 보이게 하기 
+
+
+  $('.top_btn').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  })
+
+  $('.top').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  })
+
+  //탑버튼 스르륵 올라가기 효과 부여 
+
+  function clock() {
+    let date = new Date();
+    // date Object를 받아오고 
+
+    let year = date.getFullYear();
+    // 년
+
+    let month = date.getMonth();
+    // 달
+
+    let day = date.getDay();
+    // 몇일 
+
+    if (month) {
+      month = month + 1;
+    }
+
+    //월은 0부터 시작해서 1을 더해줘야 1월로 나타남
+
+    if (day) {
+      day = day + 7;
+    }
+
+    if (month < 10) {
+      month = '0' + month;
+    }
+
+    if (day < 10) {
+      day = '0' + day;
+    }
+
+    document.getElementById('clock').innerHTML = year + '년' + '&nbsp;' + month + '월' + '&nbsp;' + day + '일' + '&nbsp;';
+
+
+  }
+
+  function hours() {
+    let date = new Date();
+    // date Object를 받아오고 
+
+    let hours = date.getHours();
+    // 시간 
+
+    let minutes = date.getMinutes();
+    // 분
+
+    let seconds = date.getSeconds();
+    // 초
+
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
+    if (hours < 10) {
+      hours = '0' + hours;
+    }
+
+    document.getElementById('hours').innerHTML = hours + ':' + minutes + '&nbsp;';
+
+
+  }
+
+  clock();
+  setInterval(clock, 1000);
+  //setInterval이라는 함수로 매초마다 실행
+
+  hours();
+  setInterval(hours, 3000);
+
+  /* document.addEventListener('DOMContentLoaded', () => {
+
+    const lnb = document.querySelectorAll('.float .float_txt')
+    const lnb_sub = document.querySelectorAll('.float ul')
+
+    //All이 추가되면 classname을 가진 모든 요소를 배열로 가져온다
+
+    lnb.forEach(function(lnb) {
+
+      lnb.addEventListener('mouseover', function () {
+        lnb.setAttribute('style', 'color : #00CD3C', 'transition: 0.3s')
+      })
+
+      lnb.addEventListener('mouseout', function () {
+        lnb.setAttribute('style', 'color :black')
+      })
+
+      lnb_sub.forEach(function(lnb_sub) {
+
+        lnb_sub.addEventListener('mouseover', function () {
+          lnb.setAttribute('style', 'color : #00CD3C')
+        })
+
+        lnb_sub.addEventListener('mouseout', function () {
+          lnb.setAttribute('style', 'color :black')
+        })
+      }) 
+    }) 
+
+  }) //addEventListener */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const lnb = document.querySelectorAll('.float .float_txt')
+  const lnb_sub = document.querySelectorAll('.float ul')
+
+    //All이 추가되면 classname을 가진 모든 요소를 배열로 가져온다
+
+  lnb.forEach((lnb) => {
+
+    lnb.addEventListener('mouseover', function () {
+      lnb.setAttribute('style', 'color : #00CD3C', 'transition: 0.3s')
+    })
+    lnb.addEventListener('mouseout', function () {
+      lnb.setAttribute('style', 'color :black')
+    })
+
+    lnb_sub.forEach((lnb_sub) => {
+      //상위 스코프를 불러온다 =>
+
+      lnb_sub.addEventListener('mouseover', function () {
+        this.parentNode.querySelector('.float_txt').setAttribute('style', 'color : #00CD3C')
+      })
+
+      lnb_sub.addEventListener('mouseout', function () {
+        this.parentNode.querySelector('.float_txt').setAttribute('style', 'color :black')
+      })
+
+    }) //lnb_sub
+  }) //lnb
+
+}) //addEventListener
+
 </script>
 
 
